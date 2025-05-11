@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Social Media is Addictive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Why We Can't Stop Scrolling</h1>
+    <p style="text-align: center; color: #aaa;">The psychology behind social media addiction</p>
+    
+    <div class="loop-diagram">
+        <div class="loop-step">
+            <div class="step-header">
+                <div class="step-icon">1</div>
+                <h2>Trigger <span class="psych-trigger">Variable Reward</span></h2>
+            </div>
+            <p>Unexpected notifications (likes, messages) activate dopamine-seeking behavior. Our brains get hooked on the "maybe" of reward.</p>
+        </div>
+        
+        <div class="loop-step">
+            <div class="step-header">
+                <div class="step-icon">2</div>
+                <h2>Action <span class="psych-trigger">Infinite Scroll</span></h2>
+            </div>
+            <p>Frictionless interaction (endless content, pull-to-refresh) makes responding effortless. No natural stopping points.</p>
+        </div>
+        
+        <div class="loop-step">
+            <div class="step-header">
+                <div class="step-icon">3</div>
+                <h2>Investment <span class="psych-trigger">Loss Aversion</span></h2>
+            </div>
+            <p>Time spent curating profiles creates sunk cost fallacy. We fear missing out if we disengage.</p>
+        </div>
+        
+        <div class="loop-step">
+            <div class="step-header">
+                <div class="step-icon">4</div>
+                <h2>Repeat <span class="psych-trigger">Habit Formation</span></h2>
+            </div>
+            <p>Each cycle strengthens neural pathways. The loop becomes automatic through operant conditioning.</p>
+        </div>
+    </div>
+    
+    <div class="interactive-demo">
+        <h3>Try it yourself:</h3>
+        <p>Click notifications to simulate dopamine hits</p>
+        <div class="notification" onclick="addClick()">🔔 3 New Likes!</div>
+        <div class="notification" onclick="addClick()">💬 1 New Comment</div>
+        <div class="notification" onclick="addClick()">👥 2 New Followers</div>
+        <div class="counter" id="clickCounter">0 dopamine hits</div>
+        <button onclick="resetCounter()">Reset</button>
+    </div>
+    
+    <div class="sources">
+        <p>Psychological concepts based on:<br>
+        - Nir Eyal's "Hooked" model<br>
+        - B.F. Skinner's operant conditioning<br>
+        - Stanford's Persuasive Tech Lab research</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

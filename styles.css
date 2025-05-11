@@ -1,0 +1,152 @@
+:root {
+    --dopamine-pink: #FF2D75;
+    --attention-orange: #FF9500;
+    --fear-red: #FF3B30;
+    --reward-blue: #007AFF;
+    --dark-bg: #121212;
+    --card-bg: #1E1E1E;
+    --ig-purple: #833AB4;
+    --ig-red: #FD1D1D;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--dark-bg);
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: var(--dopamine-pink);
+    margin-bottom: 30px;
+}
+
+.loop-diagram {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.loop-step {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    position: relative;
+    border-left: 4px solid var(--dopamine-pink);
+}
+
+.loop-step:nth-child(2) {
+    border-color: var(--attention-orange);
+}
+
+.loop-step:nth-child(3) {
+    border-color: var(--fear-red);
+}
+
+.loop-step:nth-child(4) {
+    border-color: var(--reward-blue);
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.step-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dopamine-pink);
+}
+
+.loop-step:nth-child(2) .step-icon {
+    background: var(--attention-orange);
+}
+
+.loop-step:nth-child(3) .step-icon {
+    background: var(--fear-red);
+}
+
+.loop-step:nth-child(4) .step-icon {
+    background: var(--reward-blue);
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.psych-trigger {
+    background: rgba(255,255,255,0.1);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+.interactive-demo {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.notification {
+    display: inline-block;
+    background: linear-gradient(to right, var(--ig-purple), var(--ig-red));
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    margin: 10px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.2s;
+}
+
+.notification:hover {
+    transform: scale(1.05);
+}
+
+.counter {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: var(--dopamine-pink);
+}
+
+button {
+    background: var(--reward-blue);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,122,255,0.4);
+}
+
+.sources {
+    font-size: 0.9rem;
+    color: #999;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
